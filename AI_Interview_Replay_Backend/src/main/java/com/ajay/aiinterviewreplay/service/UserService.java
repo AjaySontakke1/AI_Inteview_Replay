@@ -1,5 +1,6 @@
 package com.ajay.aiinterviewreplay.service;
 
+import com.ajay.aiinterviewreplay.entity.User;
 import com.ajay.aiinterviewreplay.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -10,5 +11,9 @@ public class UserService {
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
+    }
+
+    public User createUser(User user) {
+        return userRepository.save(user);
     }
 }
