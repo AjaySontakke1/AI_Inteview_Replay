@@ -13,9 +13,10 @@ target/
 node_modules/
 dist/
 
-# Environment variables
+# Environment variables & secrets
 .env
 .env.*
+**/application.properties
 
 # IDE
 .idea/
